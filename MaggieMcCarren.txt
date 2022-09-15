@@ -1,0 +1,3 @@
+Hello, I'm Maggie McCarren.
+This is my second to last semester for a CS degree in C++.
+Looking forward to learning new skills.
