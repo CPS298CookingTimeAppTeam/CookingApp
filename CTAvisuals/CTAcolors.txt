@@ -1,0 +1,8 @@
+Yellow background - FAF591
+Black - 020202
+Beige rectangles - E9E7B5
+Green - D0FA8C
+Orange - FFCD1B
+Red - FC6262
+Grey - D9D9D9
+Dark Grey background - 5C4E4E 
