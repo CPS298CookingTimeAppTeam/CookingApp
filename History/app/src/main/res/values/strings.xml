@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">History</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="viewed_recipes">Viewed Recipes</string>
+    <string name="completed_recipes">Completed Recipes</string>
+    <string name="attempted_or_in_progress">Attempted OR In Progress</string>
+</resources>

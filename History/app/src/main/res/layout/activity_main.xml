@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E7B5"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:theme="@style/Theme.History.AppBarOverlay">
+
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textColor="#FAF591" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="#E9E7B5"
+            app:tabIndicatorColor="#000404"
+            app:tabTextColor="#000000">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/viewedTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E9E7B5"
+                android:text="@string/viewed_recipes" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/attemptedTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E9E7B5"
+                android:text="@string/attempted_or_in_progress" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/completeTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E9E7B5"
+                android:text="@string/completed_recipes" />
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAF591"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:ignore="SpeakableTextPresentCheck" >
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+    </androidx.viewpager.widget.ViewPager>
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine4"
+        android:layout_width="329dp"
+        android:layout_height="461dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_anchor="@+id/view_pager"
+        app:layout_anchorGravity="center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
